@@ -1,0 +1,615 @@
+
+
+
+/* --------- 1. General styling of navigation, login, registration pages --------- */
+
+
+body {
+    background-color: #cfcfd1;
+    background-image: url('Simple5.jpg');
+    background-position: center;
+    background-size: cover; 
+    /* background-repeat: no-repeat; */
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    margin: 3%;
+    object-fit: scale-down;
+}
+
+#nav {
+    padding: 10px 0 20px 0;
+    background-color: white;
+    border-bottom: 1px solid #969393;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#header {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#header-logo{
+    text-decoration: none;
+    color: inherit;
+}
+
+#navButton {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navButton a {
+    margin: 0 10px 0 10px;
+}
+
+#mainNavButton{
+    width: 70%;
+} 
+
+#holderNavButton{
+    width: 15%;
+}
+
+#cartNavButton{
+    width: 15%;
+    text-align: right;
+    padding-right: 1%;
+} 
+
+.submitButton {
+    background-color: #3C913B;
+    border: none;
+    color: white;
+    padding: 9px 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #187125;
+    color: white;
+    cursor: pointer;
+}
+
+#form_setting {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 30px 0px 30px;
+    width: fit-content;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    border: 1px solid #969393;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flash {
+    background-color: red;
+    text-align: center;
+    width: 100%
+}
+
+
+
+
+
+/* --------- 2. Styling of the index page --------- */
+
+
+.index-intro-box {
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px 35px 25px 35px;
+    border-radius: 30px;
+}
+
+.index-img {
+    width: 300px;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+    border: 3px solid #DEB64B;
+}
+
+.index-intro {
+    /* color: #F1E3A4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .index-intro-box {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        height: 80%;
+        padding: 5px 35px 5px 35px;
+    }
+
+    .index-img {
+        width: 250px;
+    }
+}
+
+
+
+
+/* --------- 3. Styling of the about page --------- */
+
+
+.about-container {
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    padding: 22px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #969393;
+}
+
+.about-bottom {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-img {
+    width: 150px;
+    height: auto;
+    object-fit: scale-down;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+
+.about-bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-name {
+    font-weight: bold;
+    font-size: large;
+}
+
+.about-detail {
+    font-size: medium;
+}
+
+.about-leading-text {
+    font-weight: bold;
+}
+
+@media (max-width: 850px) {
+    .about-bottom {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* --------- 4. Styling of the product page --------- */
+
+
+.product-inventory-box {
+    /* background-color: whitesmoke;
+    background: rgba(255, 255, 255, 0.7); */
+    color: black;
+    padding: 25px 35px 25px 35px;
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-item {
+    background-color: whitesmoke;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid #969393;
+    margin-bottom: 2%;
+    padding: 3% 2% 3% 2%;
+}
+
+.product-img {
+    width: 250px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-leading-text {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.product-purchase-detail {
+    padding: 2% 0 2% 0;
+}
+
+.product-drop-down-quantity {
+    width: 40px;
+    margin-left: 1.5%;
+}
+
+.product-pricing {
+    height: 28px;
+}
+
+.product-purchase-button {
+    margin-top: 3%;
+}
+
+@media (max-width: 850px) {
+    .product-item {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* --------- 5. Styling of all the items pages --------- */
+
+
+.itemPage-box {
+    background-color: whitesmoke;
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    padding: 25px 35px 25px 35px;
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #969393; */
+}
+
+.itemPage-img {
+    width: 300px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.itemPage-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemPage-bottom {
+    width: 400px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-end;
+}
+
+.itemPage-purchase-info {
+    width: 255px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemPage-pricing {
+    height: fit-content;
+}
+
+.itemPage-select-quantity {
+    width: 130px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemPage-drop-down-quantity {
+    width: 30%;
+    height: 23px;
+}
+
+.leading-text {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.itemPage-large-text {
+    font-size: large;
+}
+
+@media (max-width: 850px) {
+
+    .itemPage-purchase-info {
+        height: 60px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .itemPage-bottom {
+        height: 130px;
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-self: center;
+    }
+}
+
+
+
+
+
+/* --------- 6. Styling of the thanks page --------- */
+
+
+.thanks-box {
+    margin-top: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px 35px 25px 35px;
+    border-radius: 30px;
+}
+
+.thanks-img {
+    width: 300px;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+    /* border: 3px solid #DEB64B; */
+}
+
+.thanks-intro {
+    /* color: #F1E3A4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .thanks-intro-box {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        height: 80%;
+        padding: 5px 35px 5px 35px;
+    }
+
+    .thanks-img {
+        width: 250px;
+    }
+}
+
+
+
+
+
+/* --------- 7. Styling of the error page --------- */
+
+
+.error-box {
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px 35px 25px 35px;
+    border-radius: 30px;
+}
+
+.error-img {
+    width: 300px;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+    /* border: 3px solid #DEB64B; */
+}
+
+.error-intro {
+    /* color: #F1E3A4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .error-intro-box {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        height: 80%;
+        padding: 5px 35px 5px 35px;
+    }
+
+    .error-img {
+        width: 250px;
+    }
+}
+
+
+
+
+
+/* --------- 8. Styling of the logoff page --------- */
+
+
+#logoff_form_setting {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px 60px 25px 60px;
+    width: fit-content;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    border: 1px solid #969393;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logoff-submitButton {
+    background-color: #ff3546;
+    border: none;
+    color: white;
+    padding: 9px 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logoff-submitButton:hover {
+    background-color: #ff0019;
+    color: white;
+    cursor: pointer;
+}
+
+.logoff-header{
+    margin-bottom: 25px;
+}
+
+
+
+
+/* --------- 8. Styling of the cart page --------- */
+
+
+#cart-shopping-box {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 30px 0px 30px;
+    width: fit-content;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    border: 1px solid #969393;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.cart th {
+    border: solid 2px #bebaba;
+}
+
+.cart td {
+    border: solid 2px #bebaba;
+    padding: 20px;
+}
+
+.cart-item-image{
+    width: 150px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.cart-qty-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cart-xButton{
+    width: 28px;
+    text-align: right;
+    padding-left: 10px;
+}
+
+#cart-total{
+    font-weight: bold;
+}
+
+#cart-checkout-button{
+    padding-bottom: 30px;
+}
+
+
+
+
+/* --------- 9. The styling for "added to cart" bubble--------- */
+
+
+.loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    display: none;
+}
+
+.loading-container {
+    width: 200px;
+    margin: auto;
+    margin-top: 37vh;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#loading_img {
+    max-width: 100%;
+    border-bottom: 0;
+}
+
+#after-loading {
+    display: none;
+}
+
+
